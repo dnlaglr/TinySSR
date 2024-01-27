@@ -1,0 +1,31 @@
+{
+  "name": "tinyssr",
+  "version": "1.0.0",
+  "description": "A simple React server-side rendering framework. ",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:client": "esbuild ./src/index.ts --bundle --platform=node --outfile=dist/index.js",
+    "build:server": "esbuild ./src/server.ts --bundle --platform=node --outfile=dist/server.js",
+    "build": "npm run build:client && npm run build:server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dnlaglr/TinySSR.git"
+  },
+  "author": "dnlaglr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dnlaglr/TinySSR/issues"
+  },
+  "homepage": "https://github.com/dnlaglr/TinySSR#readme",
+  "devDependencies": {
+    "@types/node": "^20.11.7",
+    "@types/react": "^18.2.48",
+    "esbuild": "0.19.12",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
