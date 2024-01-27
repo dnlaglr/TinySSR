@@ -8,7 +8,6 @@ function serveStaticFiles(port: number, staticDir: string) {
     const filePath = path.join(process.cwd(), staticDir, reqPath);
 
     fs.readFile(filePath, (err, data) => {
-      console.log(filePath);
       if (err) {
         res.writeHead(404, {"Content-Type": "text/html" });
         res.end("Error: Path not found.");
@@ -21,7 +20,6 @@ function serveStaticFiles(port: number, staticDir: string) {
 
   server.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
-    console.log(staticDir)
   });
 }
 
