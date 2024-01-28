@@ -9,7 +9,6 @@ While I've built several projects using server-side rendering, I didn't really u
 ### Features
 
 ### Built With
-- [Express](https://github.com/expressjs/express) - Web framework
 - [Typescript](https://www.typescriptlang.org/) - Language used
 - [React](https://github.com/facebook/react) - Frontend UI library
 
