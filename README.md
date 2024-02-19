@@ -13,9 +13,9 @@ While I've built several projects using server-side rendering, I didn't really u
 - [React](https://github.com/facebook/react) - Frontend UI library
 
 ## Roadmap
-- [ ] Get basic SSR functionality
+- [x] Get basic SSR functionality
   - Process client requests
   - Fetch any necessary data
   - Dynamically generate html
-- [ ] Implement path-based routing
+- [x] Implement path-based routing
   - Add sub-folder support
